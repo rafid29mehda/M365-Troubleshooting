@@ -227,3 +227,5 @@ By following these detailed steps, you can ensure a smooth and successful migrat
 Confidence level: High
 
 Source: [Microsoft - Migrate from G Suite](https://docs.microsoft.com/en-us/exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)
+
+[Youtube Tutorial](https://www.youtube.com/watch?v=5IkIA_kC2OU&list=PL5oyXP-xEiGBt94O8rfGtJT2yfkjiRY2W&index=48)
