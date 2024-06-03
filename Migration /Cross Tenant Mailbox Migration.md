@@ -267,3 +267,5 @@ This guide will cover the detailed steps required for a cross-tenant mailbox mig
 Following these detailed steps ensures a smooth transition of mailboxes from one Microsoft 365 tenant to another. Always test with a small batch before proceeding with a full-scale migration to minimize disruptions.
 
 Source: [Microsoft - Perform a cross-tenant mailbox migration](https://learn.microsoft.com/en-us/microsoft-365/enterprise/cross-tenant-mailbox-migration?view=o365-worldwide)
+
+[Youtube Tutorial](https://www.youtube.com/watch?v=8VuE3KOWEu4&list=PL5oyXP-xEiGBt94O8rfGtJT2yfkjiRY2W&index=43)
