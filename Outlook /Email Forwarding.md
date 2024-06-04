@@ -1,3 +1,32 @@
+Email forwarding in Microsoft 365 allows you to automatically send incoming emails from one mailbox to another, which can be within the same organization or to an external email address. Here's a brief overview of how it works and the types of email forwarding available:
+
+**How Email Forwarding Works:**
+1. **Admin Setup:** As an admin, you can set up email forwarding in the Microsoft 365 admin center. You'll need to access the **Users > Active users** page, select the user, and then manage their email forwarding settings⁴.
+2. **User Setup:** Users can set up email forwarding by creating inbox rules in Outlook or through Outlook on the web (OWA), which allows them to forward emails to another address⁵.
+3. **License Requirements:** The account from which emails are being forwarded must have a license unless it's a shared mailbox⁴.
+4. **Security Controls:** You can use outbound spam filter policies to control automatic forwarding to external recipients to prevent data leakage⁷.
+
+**Types of Email Forwarding:**
+1. **Inbox Rules:** Users can create rules in Outlook to automatically forward messages to external senders⁷.
+2. **SMTP Forwarding:** Admins can configure SMTP forwarding to automatically send messages to external recipients. They can choose to keep copies of forwarded messages in the mailbox or simply forward them⁷.
+3. **Shared Mailbox:** If a user leaves the organization, their mailbox can be converted to a shared mailbox to allow multiple people to access it. However, a shared mailbox cannot exceed 50 GB⁴.
+
+For detailed steps and guidance, you can refer to the Microsoft 365 admin documentation or watch tutorial videos that explain the process in depth¹²³. Remember, it's important to consider the security implications of email forwarding, especially when forwarding to external addresses.
+
+Source: 
+(1) [Configure email forwarding - Microsoft 365 admin.](https://learn.microsoft.com/en-us/microsoft-365/admin/email/configure-email-forwarding?view=o365-worldwide.)
+(2) [Everything You Need to Know about How to Forward Emails.](https://www.microsoft.com/en-us/microsoft-365-life-hacks/organization/how-to-forward-emails.)
+(3) [Control automatic external email forwarding in Microsoft 365.](https://learn.microsoft.com/en-us/defender-office-365/outbound-spam-policies-external-email-forwarding.)
+(4) [How Email Forwarding works in Office 365 | Types of email forwarding in Office 365.](https://www.youtube.com/watch?v=fq5LAOlwILU.)
+(5) [How to enable email forwarding in Office 365 to multiple internal or external email addresses?.](https://www.youtube.com/watch?v=C45TmddsC4g.)
+(6) [How to set up email forwarding in the Exchange admin center: Step-by-step tutorial for Microsoft 365.](https://www.youtube.com/watch?v=GDVsbMBdoMY.)
+(7) [Configuring Email Forwarding in Office 365: An Easy Guide.](https://www.sharepointdiary.com/2021/11/configuring-email-forwarding-in-office-365.html.)
+(8) [All you need to know about automatic email forwarding in Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/all-you-need-to-know-about-automatic-email-forwarding-in/ba-p/2074888.)
+(9) [Automatic email forwarding in Microsoft 365 - CodeTwo.](https://www.codetwo.com/admins-blog/automatic-email-forwarding-microsoft-365/.)
+
+
+
+
 Email forwarding in Microsoft 365 allows users to automatically send incoming emails to another email address. This can be particularly useful for handling emails during absences, redirecting specific types of emails to different departments, or simply consolidating emails into one mailbox. Here's a detailed explanation of how it works and the types of email forwarding available:
 
 ## How Email Forwarding Works in Microsoft 365
