@@ -1,3 +1,5 @@
+Check Email Header to find out if a the mail was forwarded or not.
+
 Email forwarding in Microsoft 365 allows you to automatically send incoming emails from one mailbox to another, which can be within the same organization or to an external email address. Here's a brief overview of how it works and the types of email forwarding available:
 
 **How Email Forwarding Works:**
@@ -72,3 +74,5 @@ Email forwarding in Microsoft 365 allows users to automatically send incoming em
 Admins can monitor and control forwarding to prevent unauthorized data forwarding. This includes setting up outbound spam filter policies and using transport rules to block or allow forwarding based on specific criteria【66†source】.
 
 By understanding these methods, organizations can effectively manage and utilize email forwarding to streamline communication and ensure important emails are directed to the right recipients. For more details, refer to the official Microsoft documentation and support resources.
+
+[Youtube Source](https://www.youtube.com/watch?v=fq5LAOlwILU&list=PL5oyXP-xEiGBt94O8rfGtJT2yfkjiRY2W&index=14)
