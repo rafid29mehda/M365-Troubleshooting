@@ -1,4 +1,4 @@
-Check Email Header to find out if a the mail was forwarded or not.
+Check Email Header to find out if the mail was forwarded or not.
 
 Email forwarding in Microsoft 365 allows you to automatically send incoming emails from one mailbox to another, which can be within the same organization or to an external email address. Here's a brief overview of how it works and the types of email forwarding available:
 
