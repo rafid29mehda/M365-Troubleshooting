@@ -1,5 +1,10 @@
 As a Microsoft 365 Technical Support Engineer, troubleshooting Exchange Online Protection (EOP) involves a comprehensive understanding of its features and common issues. Here are some key points you should be familiar with:
 
+![image](https://github.com/rafid29mehda/M365-Troubleshooting/assets/71279591/fcc28e28-a708-45f5-846d-adb07868be10)
+![image](https://github.com/rafid29mehda/M365-Troubleshooting/assets/71279591/08def531-9e42-4753-bd22-2a730a0838b5)
+
+
+
 1. **Understand EOP Features**: Know the core functionalities of EOP, such as anti-spam, anti-malware, connection filtering, outbound spam filtering, and quarantine management⁴.
 
 2. **Familiarize with EOP Policies**: Be aware of the different policies that can be configured in EOP, including spam filter policies, malware filter policies, and connection filter policies⁵.
