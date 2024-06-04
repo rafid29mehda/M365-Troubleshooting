@@ -63,6 +63,69 @@ Let's delve into the important properties in email headers, including **SCL (Spa
         - **PTR**: No reverse DNS lookup was performed.
         - **SFTY**: Safety verdict (additional details not shown here)².
 
+
+### Specialized Headers in Outlook
+
+#### 1. **SCL (Spam Confidence Level)**
+   - **Definition**: A numerical value assigned by Microsoft's anti-spam filter to indicate the likelihood that an email is spam.
+   - **Values and Meanings**:
+     - `-1`: The message was not checked for spam.
+     - `0`: The message is not spam.
+     - `1-4`: Low likelihood of being spam.
+     - `5-6`: Moderate likelihood of being spam.
+     - `7-9`: High likelihood of being spam.
+   - **Example**: `X-MS-Exchange-Organization-SCL: 5` (Indicates moderate spam probability)
+
+#### 2. **SFV (Spam Filtering Verdict)**
+   - **Definition**: Indicates the verdict of the spam filter regarding the email.
+   - **Values and Meanings**:
+     - `SFV:SKN`: Spam filtering is skipped (not needed).
+     - `SFV:NSPM`: Not spam.
+     - `SFV:SPM`: Spam.
+     - `SFV:SKA`: Spoofing detected.
+   - **Example**: `X-Forefront-Antispam-Report: SFV:NSPM` (Indicates the email is not spam)
+
+#### 3. **IFV (Inbound Filtering Verdict)**
+   - **Definition**: Indicates the result of inbound filtering checks.
+   - **Values and Meanings**:
+     - `IFV:SKN`: Inbound filtering is skipped.
+     - `IFV:SKA`: Known safe sender.
+   - **Example**: `X-Forefront-Antispam-Report: IFV:SKN` (Indicates inbound filtering was skipped)
+
+### Additional Headers
+
+- **X-Originating-IP**: Shows the IP address of the system that sent the email.
+  - Example: `X-Originating-IP: [192.0.2.1]`
+
+- **Authentication-Results**: Displays the results of various authentication checks (SPF, DKIM, DMARC).
+  - Example: `Authentication-Results: spf=pass smtp.mailfrom=example.com; dkim=pass header.d=example.com; dmarc=pass`
+
+### Example Email Header
+
+```
+From: example@domain.com
+To: recipient@domain.com
+Date: Mon, 04 Jun 2024 10:30:00 -0400
+Subject: Meeting Agenda
+Message-ID: <1234567890@example.com>
+Return-Path: <example@domain.com>
+Received: from mail.example.com (mail.example.com [192.0.2.1]) by mx.google.com with ESMTP id abc123; Mon, 04 Jun 2024 10:30:00 -0400
+X-MS-Exchange-Organization-SCL: 1
+X-Forefront-Antispam-Report: SFV:NSPM; IFV:SKN
+X-Originating-IP: [192.0.2.1]
+Authentication-Results: spf=pass smtp.mailfrom=example.com; dkim=pass header.d=example.com; dmarc=pass
+```
+
+### Explanation with Example
+
+- **SCL: 1** indicates that the email has a low likelihood of being spam.
+- **SFV: NSPM** confirms that the spam filter determined the email is not spam.
+- **IFV: SKN** shows that inbound filtering was skipped.
+- **Authentication-Results** indicate that the email passed SPF, DKIM, and DMARC checks, confirming its legitimacy.
+
+
+For more detailed information, you can refer to [Microsoft's documentation on email headers](https://docs.microsoft.com/en-us/exchange/mail-flow/how-to-set-up-messagetracking) (this is an example link, please check the exact URL based on your needs).
+
 Remember that these properties help administrators and users understand the processing of emails, identify potential threats, and take appropriate actions. If you encounter emails with suspicious SCL or SFV values, consider investigating further or applying additional security measures.
 
 Source: Conversation with Copilot, 6/4/2024
