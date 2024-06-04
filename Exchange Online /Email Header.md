@@ -35,7 +35,7 @@ Source: Conversation with Copilot, 6/4/2024
 (4) View Full Headers in Outlook for Windows | IT@Cornell. https://it.cornell.edu/outlook2016win/view-full-headers-outlook-windows.
 
 
-Certainly! Let's delve into the important properties in email headers, including **SCL (Spam Confidence Level)**, **SFV (Spam Filter Verdict)**, and **IFV (Inbound Filter Verdict)**. These properties provide crucial information about how an email was processed and whether it was flagged as spam or malicious.
+Let's delve into the important properties in email headers, including **SCL (Spam Confidence Level)**, **SFV (Spam Filter Verdict)**, and **IFV (Inbound Filter Verdict)**. These properties provide crucial information about how an email was processed and whether it was flagged as spam or malicious.
 
 1. **SCL (Spam Confidence Level)**:
     - The **SCL** is a score assigned by anti-spam engines to indicate the probability that an email is considered spam.
