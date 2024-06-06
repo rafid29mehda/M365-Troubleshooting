@@ -109,6 +109,107 @@ Certainly! Let's walk through an example scenario where you want to configure an
 
 Remember, it's important to regularly review and update your anti-spam policies to adapt to evolving threats and changes in your organization's email flow. For a more detailed guide, including screenshots and additional options, you can refer to the official Microsoft documentation on configuring anti-spam policies¹. Additionally, you may find video tutorials helpful for visual guidance on the process⁵.
 
+
+### Scenario-Based Troubleshooting Solutions for Anti-Spam Policies in Microsoft 365
+
+#### Scenario 1: Legitimate Emails Marked as Spam
+
+**Issue:**
+Users report that legitimate emails are being marked as spam and moved to the Junk Email folder.
+
+**Solution:**
+
+1. **Review Spam Filtering Policies:**
+   - Navigate to the Security & Compliance Center.
+   - Go to **Threat Management** > **Policy** > **Anti-spam**.
+
+2. **Adjust Bulk Email Threshold:**
+   - Increase the bulk email threshold to reduce false positives.
+   - Set the threshold to a higher value (e.g., 6) to allow more legitimate bulk emails.
+
+3. **Update Allowed Senders and Domains:**
+   - Add the sender’s email address or domain to the allowed list.
+   - Go to **Policy** > **Anti-spam** > **Inbound policy (default)** > **Allowed and blocked senders**.
+   - Add the legitimate sender’s domain or email address to the **Allowed** list.
+
+4. **Modify Spam Actions:**
+   - Change the action for spam detection from "Move message to Junk Email folder" to "Quarantine message" for easier review.
+   - In the anti-spam policy, set the spam action to quarantine rather than sending it directly to Junk Email.
+
+5. **Monitor and Adjust:**
+   - Continuously monitor the spam filter logs and user feedback to fine-tune the settings.
+
+**References:**
+- [Microsoft Learn - Anti-Spam Policies](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/anti-spam-protection?view=o365-worldwide)
+- [Tech Community - Best Practices for Anti-Spam](https://techcommunity.microsoft.com/t5/exchange-team-blog/best-practices-for-configuring-eop/ba-p/602338)
+
+#### Scenario 2: Outbound Emails Blocked Due to Suspected Spam Activity
+
+**Issue:**
+A user’s outbound emails are being blocked, and they are restricted from sending further emails due to suspected spam activity.
+
+**Solution:**
+
+1. **Identify the Affected User:**
+   - Go to the Security & Compliance Center.
+   - Navigate to **Reports** > **Dashboard** > **Email activity**.
+
+2. **Review User Activity:**
+   - Check the user's email activity for any unusual patterns, such as a high volume of emails sent in a short period.
+   - Identify if the user’s account might be compromised.
+
+3. **Increase Outbound Sending Limits Temporarily:**
+   - If the user is legitimate, temporarily increase their outbound sending limits.
+   - Go to **Policy** > **Anti-spam** > **Outbound policy (default)** > **Limits**.
+   - Adjust the recipient and message limits accordingly.
+
+4. **Release the User:**
+   - Navigate to **Threat Management** > **Policy** > **Restricted Users**.
+   - Select the user and release them from the restricted list if they are found to be legitimate.
+
+5. **Enhance User Security:**
+   - Ensure the user has Multi-Factor Authentication (MFA) enabled.
+   - Encourage the user to change their password and review security settings.
+
+**References:**
+- [Microsoft Defender for Office 365 - Outbound Spam Policies](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/defender-for-office-365?view=o365-worldwide)
+- [VAND3RLINDEN - Anti-Spam Policies](https://vand3rlinden.com/anti-spam-policies-microsoft-defender-for-microsoft-365)
+
+#### Scenario 3: SPF Record Issues Causing Email Delivery Failures
+
+**Issue:**
+Emails sent from your domain are being rejected or marked as spam due to SPF record failures.
+
+**Solution:**
+
+1. **Check Current SPF Record:**
+   - Use an online tool like [MXToolbox SPF Checker](https://mxtoolbox.com/spf.aspx) to analyze your SPF record.
+   - Ensure the SPF record includes all authorized sending IP addresses.
+
+2. **Update SPF Record:**
+   - Access your domain’s DNS settings.
+   - Modify the SPF record to include missing IP addresses. For example:
+     ```
+     v=spf1 ip4:192.0.2.0/24 include:spf.protection.outlook.com -all
+     ```
+
+3. **Flatten the SPF Record:**
+   - Reduce the number of DNS lookups if the record is too long.
+   - Consolidate IP ranges and use fewer include statements.
+
+4. **Validate and Test:**
+   - Validate the updated SPF record using tools like [SPF Record Checker](https://dmarcian.com/spf-survey/).
+   - Send test emails to ensure the changes resolve the issue.
+
+5. **Monitor and Adjust:**
+   - Continuously monitor email delivery reports and make further adjustments if necessary.
+
+**References:**
+- [Microsoft Documentation - Set up SPF in Office 365](https://learn.microsoft.com/en-us/microsoft-365/security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing?view=o365-worldwide)
+- [Whois SPF Troubleshooting](https://whois.is/how-to-fix-spf-issues-in-dns-records)
+
+By following these scenario-based troubleshooting steps, you can effectively manage and resolve common anti-spam issues in Microsoft 365, ensuring secure and reliable email communication within your organization.
+
 Source: Conversation with Copilot, 6/6/2024
 (1) Configure spam filter policies - Microsoft Defender for Office 365. https://learn.microsoft.com/en-us/defender-office-365/anti-spam-policies-configure.
 
