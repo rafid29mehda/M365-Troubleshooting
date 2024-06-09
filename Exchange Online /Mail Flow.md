@@ -1,4 +1,6 @@
-### Steps of Microsoft 365 Mail Flow
+## [Troubleshoot Mailflow Link](https://learn.microsoft.com/en-us/training/modules/troubleshoot-mail-flow/)
+
+## Steps of Microsoft 365 Mail Flow
 
 Understanding the mail flow process in Microsoft 365 is crucial for managing and troubleshooting email delivery within your organization. Here are the steps involved in the mail flow process:
 
