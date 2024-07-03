@@ -9,3 +9,9 @@ Content Search
   - you need to be a member of eDiscover Manager( compliance > roles and scopes > permissions > Purview role solutions) to do content search
 
 Powershell command to expand recovery storage space and can enable auto expanding archive (E3,E5 License)
+
+Enterprise licenses have Intune (Device Management) (advance protection and data analysis)
+
+Business Premium license includes advanced Microsoft Defender features.
+
+Customers often list the wrong values in their SPF record, which can cause mail flow problems.
