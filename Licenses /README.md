@@ -1,4 +1,5 @@
 ## Microsoft 365 License Plans Overview
+![image](https://github.com/rafid29mehda/M365-Troubleshooting/assets/71279591/cad7d790-53f3-4769-8c5d-4a80b2f685e8)
 
 Microsoft 365 offers a variety of plans designed to meet the diverse needs of businesses. The main categories are:
 
