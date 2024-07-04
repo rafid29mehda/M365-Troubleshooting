@@ -15,3 +15,10 @@ Enterprise licenses have Intune (Device Management) (advance protection and data
 Business Premium license includes advanced Microsoft Defender features.
 
 Customers often list the wrong values in their SPF record, which can cause mail flow problems.
+
+M365 Groups create a sharepoint site, teams, shared mailbox, planner
+
+
+
+
+
